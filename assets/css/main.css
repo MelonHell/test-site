@@ -730,7 +730,7 @@ body {
 .intro--banner button .btn-background {
 	position: absolute;
 	top: 0;
-	left: 23px;
+	left: 0;
 	right: 0;
 	height: 100%;
 	background-color: #aa0000;
@@ -740,7 +740,7 @@ body {
 }
 
 .intro--banner button:hover .btn-background {
-	left: 0
+	left: 100%
 }
 
 .intro--banner button:focus {
@@ -758,6 +758,11 @@ body {
 	position: absolute;
 	bottom: 21px;
 	right: -12px
+}
+
+.intro--banner a {
+	text-decoration: none;
+	color: white;
 }
 
 .intro--options {
@@ -1476,10 +1481,31 @@ body {
 	border: none;
 	border-radius: 0;
 	margin-bottom: 8px;
+	-webkit-transition: background-color .3s ease-in-out;
+	transition: background-color .3s ease-in-out
 }
 
 .hire button:hover {
 	background-color: #550000;
+}
+
+.hire button .btn-background {
+	width: 400px;
+	max-width: 100%;
+	line-height: 50px;
+	font-size: 16px;
+	font-weight: 700;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #aa0000;
+	z-index: -1;
+	-webkit-transition: left .2s ease-in-out;
+	transition: left .2s ease-in-out
+}
+
+.hire button:hover .btn-background {
+	left: 100%
 }
 
 .hire a {
